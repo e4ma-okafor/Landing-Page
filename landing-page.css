@@ -72,6 +72,20 @@ nav button:hover {
     cursor: pointer;
 }
 
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--color-two);
+}
+
 .start,
 .end {
     display: flex;
@@ -255,7 +269,50 @@ nav button:hover {
     color: var(--color-two);
 }
 
-@media(max-width: 1068px) {
+@media screen and (max-width: 1068px) {
+    .menu {
+        position: fixed;
+        left: -100%;
+        top: 10px;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        background: #303030;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);        
+    }
+    
+    .menu.active {
+        left: 0;        
+    }
+
+    .menu li {
+        margin: 20px 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;             
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .top-header {
+        margin-bottom: 50px;
+        z-index: 3;
+    }
+
     .main {
         display: grid;
         grid-template-columns: 1fr;
@@ -290,8 +347,8 @@ nav button:hover {
         margin-bottom: 30px;
     }
 
-    .work img{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .work {
+        display: flex;
+        flex: 2;
     }
 }
