@@ -269,7 +269,9 @@ nav button:hover {
     color: var(--color-two);
 }
 
-@media screen and (max-width: 1068px) {
+/* Media Query */
+
+@media (max-width: 1068px) {
     .menu {
         position: fixed;
         left: -100%;
