@@ -1,4 +1,4 @@
-@media screen and (max-width: 1068px) {
+@media (max-width: 1068px) {
     .header {
         background-image: url(images/mobile/image-header.jpg);        
     }
