@@ -318,7 +318,7 @@ nav button:hover {
         grid-template-columns: 1fr;
     }
 
-    .service:nth-of-type(2) {
+    /*.service:nth-of-type(2) {
         background-image: url(images/mobile/image-transform.jpg);
     }     
     .service:nth-of-type(3) {
@@ -329,7 +329,7 @@ nav button:hover {
     } 
     .service:nth-of-type(6) {
         background-image: url(images/mobile/image-graphic-design.jpg);
-    }   
+    }  */ 
      
     .clients {
         display: flex;
@@ -342,14 +342,8 @@ nav button:hover {
 
     .client img {
         margin-bottom: 30px;
-    }
-    
-    .work {
-        display: flex;
-        flex: 1;
-        flex-flow: row-reverse;
-    }
-    
+    }    
+        
 }
 
 
