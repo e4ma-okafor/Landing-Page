@@ -40,7 +40,7 @@ ul li {
 
 .top-header {
     display: flex;
-    padding: 3%;
+    padding: 3%;    
     justify-content: space-between;
     gap: 10px;
 }
@@ -300,7 +300,8 @@ nav button:hover {
         transform: translateY(-8px) rotate(-45deg);
     }
 
-    .top-header {             
+    .top-header {
+        padding: 50px;                    
         z-index: 3;
     }
 
@@ -318,18 +319,18 @@ nav button:hover {
         grid-template-columns: 1fr;
     }
 
-    /*.service:nth-of-type(2) {
-        background-image: url(images/mobile/image-transform.jpg);
+    .service:nth-of-type(2) {
+        background-image: url(images/Mobile/image-transform.jpg);
     }     
     .service:nth-of-type(3) {
-        background-image: url(images/mobile/image-stand-out.jpg);
+        background-image: url(images/Mobile/image-stand-out.jpg);
     } 
     .service:nth-of-type(5) {
-        background-image: url(images/mobile/image-photography.jpg);
+        background-image: url(images/Mobile/image-photography.jpg);
     } 
     .service:nth-of-type(6) {
-        background-image: url(images/mobile/image-graphic-design.jpg);
-    }  */ 
+        background-image: url(images/Mobile/image-graphic-design.jpg);
+    }  
      
     .clients {
         display: flex;
