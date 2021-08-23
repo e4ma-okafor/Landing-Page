@@ -42,7 +42,7 @@ ul li {
     display: flex;
     padding: 3%;
     justify-content: space-between;
-    gap: 100%;
+    gap: 10px;
 }
 
 nav a {
@@ -86,26 +86,20 @@ nav button:hover {
     background-color: var(--color-two);
 }
 
-.start,
-.end {
-    display: flex;
-    gap: 10%;
-}    
-
 .start {
-    margin-left: -100%;
+    margin-left: -90%;
 }
 
 .end {
-    margin-right: -100%;
+    margin-right: -90%;
 }
 
 .bottom-header {
-    margin-top: 30%;
+    margin-top: 60px;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-    gap: 12%;
+    gap: 50px;
     position: sticky;
 }
 
@@ -113,15 +107,13 @@ nav button:hover {
     text-align: center;
     font-size: 72px;
     font-weight: 900;    
-    letter-spacing: 10px;
-    margin-top: -40%;                 
+    letter-spacing: 10px;                   
 }
 
 .arrow-down {
-    height: 200px;
-    width: 50px;
-    /*margin: 12% 50% 0% 48%; */
-    margin: 0% 50% 0% 48%;    
+    height: 150px;
+    width: 50px;    
+    margin: 50px 50% 0% 48%;    
 }
 
 /* main */
@@ -169,23 +161,23 @@ nav button:hover {
 }
 
 .images {
-    padding: 25%;
-    background-size: cover;
+    padding: 25%;    
+    background-size: cover;       
 }
 
 .text {
-    margin: 60% 0% -30% 0%;
+    margin: 60% 0% -30% 0%;    
     color: rgb(8, 107, 97);
     font-weight: 600;
     text-align: center;    
 }
 
 .text h2 {
-    margin-bottom: 8%;
+    margin-bottom: 30px;
 }
 
 .testimonials {
-    padding: 10% 15% 10% 15%;
+    padding: 10% 15% 10% 15%;    
 }
 
 .testimonials h2 {
@@ -220,8 +212,7 @@ nav button:hover {
 }
 
 .work {
-    display: flex;
-    flex: 4;
+    display: flex;    
     padding: 0;
     margin-bottom: 0;
 }
@@ -269,86 +260,3 @@ nav button:hover {
     color: var(--color-two);
 }
 
-@media screen and (max-width: 1068px) {
-    .menu {
-        position: fixed;
-        left: -100%;
-        top: 10px;
-        flex-direction: column;
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        background: #303030;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);        
-    }
-    
-    .menu.active {
-        left: 0;        
-    }
-
-    .menu li {
-        margin: 20px 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;             
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .top-header {
-        margin-bottom: 50px;
-        z-index: 3;
-    }
-
-    .main {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .service:nth-of-type(2) {
-        background-image: url(images/Mobile/image-transform.jpg);
-    }
-    
-    .service:nth-of-type(3) {
-        background-image: url(images/Mobile/image-stand-out.jpg);
-    }
-    
-    .service:nth-of-type(5) {
-        background-image: url(images/Mobile/image-graphic-design.jpg);    
-    }
-    
-    .service:nth-of-type(6) {
-        background-image: url(images/Mobile/image-photography.jpg);
-    }
-
-    .clients {
-        display: flex;
-        flex-flow: column;        
-        flex: 1;        
-        justify-content: space-between;
-        gap: 150px;
-        margin-bottom: 80px;
-    }
-
-    .client img {
-        margin-bottom: 30px;
-    }
-
-    .work {
-        display: flex;
-        flex: 2;
-    }
-}
