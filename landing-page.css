@@ -261,11 +261,7 @@ nav button:hover {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 1068px) {
-    .header {
-        background-image: url(images/mobile/image-header.jpg);        
-    }
-
+@media (max-width: 1068px) {    
     .menu {
         position: fixed;
         left: -100%;
@@ -322,16 +318,16 @@ nav button:hover {
         grid-template-columns: 1fr;
     }
 
-    .images:nth-of-type(2) {
+    .service:nth-of-type(2) {
         background-image: url(images/mobile/image-transform.jpg);
     }     
-    .images:nth-of-type(3) {
+    .service:nth-of-type(3) {
         background-image: url(images/mobile/image-stand-out.jpg);
     } 
-    .images:nth-of-type(4) {
+    .service:nth-of-type(5) {
         background-image: url(images/mobile/image-photography.jpg);
     } 
-    .images:nth-of-type(5) {
+    .service:nth-of-type(6) {
         background-image: url(images/mobile/image-graphic-design.jpg);
     }   
      
@@ -348,10 +344,12 @@ nav button:hover {
         margin-bottom: 30px;
     }
     
-    .work img {
-        width: 376px;
-        height: 376px;
+    .work {
+        display: flex;
+        flex: 1;
+        flex-flow: row-reverse;
     }
+    
 }
 
 
