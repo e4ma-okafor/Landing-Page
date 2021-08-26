@@ -4,6 +4,7 @@
 :root {
     --color-one: gray;
     --color-two: #fff;
+    --footer-color: rgba(45, 167, 154, 0.89);
 }
 * {
     box-sizing: border-box;
@@ -40,9 +41,10 @@ ul li {
 
 .top-header {
     display: flex;
-    padding: 3%;    
-    justify-content: space-between;
-    gap: 10px;
+    flex-wrap: nowrap;
+    gap: 60rem;
+    padding: 1rem;    
+    justify-content: space-between;    
 }
 
 nav a {
@@ -86,14 +88,6 @@ nav button:hover {
     background-color: var(--color-two);
 }
 
-.start {
-    margin-left: -90%;
-}
-
-.end {
-    margin-right: -90%;
-}
-
 .bottom-header {
     margin-top: 60px;
     display: flex;
@@ -121,6 +115,9 @@ nav button:hover {
 .main {     
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: "column1 column2"
+                         "column3 column4"
+                         "column5 column6";
     gap: 0px;
     margin: 0px;
     padding: 0px;     
@@ -161,7 +158,7 @@ nav button:hover {
 }
 
 .images {
-    padding: 25%;    
+    padding: 25%;      
     background-size: cover;       
 }
 
@@ -187,7 +184,7 @@ nav button:hover {
 
 .clients {
     display: flex;
-    gap: 5%;    
+    gap: 3rem;    
 }
 
 .client img {    
@@ -212,14 +209,12 @@ nav button:hover {
 }
 
 .work {
-    display: flex;    
-    padding: 0;
-    margin-bottom: 0;
+    display: flex;                   
 }
 
-.work img {
-    height: 20%;
-    width: 25%;
+.work img {    
+    width: 100%;
+    height: 100%;
 }
 
 /* footer */
@@ -227,7 +222,7 @@ nav button:hover {
     position: relative;
     bottom: 0;
     width: 100%;    
-    background-color: rgba(80, 180, 163, 0.801);    
+    background-color: var(--footer-color);    
     display: flex;
     flex-flow: column;
     align-items: center;    
@@ -237,18 +232,22 @@ nav button:hover {
     margin: 60px 0px 20px 0px;        
 }
 
+.footer-logo img {
+    filter: invert(60%) sepia(20%) saturate(3207%) hue-rotate(130deg) brightness(100%) contrast(80%);    
+}
+
 .social-links {
     margin: 60px 50px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;    
+    gap: 1.5rem;    
 }
 
 .nav-links ul{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    gap: 40px;     
+    gap: 1.5rem;     
 }
 
 .nav-links a {
@@ -258,6 +257,14 @@ nav button:hover {
 .nav-links a:hover,
 .social-links img:hover {
     color: var(--color-two);
+}
+
+.attribute {
+    text-align: center;
+    width: 100%;    
+    padding: 0rem 1.5rem  0rem 1.5rem;
+    font-weight: bold;
+    background-color: rgb(7, 94, 85);
 }
 
 /* Mobile Responsiveness */
@@ -299,9 +306,16 @@ nav button:hover {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+    
+    .header {
+        background-image: url(images/mobile/image-header.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     .top-header {
-        padding: 50px;                    
+        gap: 10rem;
+        padding: 3rem;                    
         z-index: 3;
     }
 
@@ -317,7 +331,17 @@ nav button:hover {
     .main {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: "column1"
+                             "column2"
+                             "column3"
+                             "column4"
+                             "column5"
+                             "column6";        
     }
+
+    .main .first {
+        grid-area: column2;
+    }    
 
     .service:nth-of-type(2) {
         background-image: url(images/Mobile/image-transform.jpg);
@@ -326,23 +350,34 @@ nav button:hover {
         background-image: url(images/Mobile/image-stand-out.jpg);
     } 
     .service:nth-of-type(5) {
-        background-image: url(images/Mobile/image-photography.jpg);
+        background-image: url(images/Mobile/image-graphic-design.jpg);
     } 
     .service:nth-of-type(6) {
-        background-image: url(images/Mobile/image-graphic-design.jpg);
-    }  
-     
+        background-image: url(images/Mobile/image-photography.jpg);
+    }
+
+    .service:nth-of-type(2),
+    .service:nth-of-type(3) {
+        padding: 50%;
+        background-position: center center;
+    }
+         
     .clients {
         display: flex;
         flex-flow: column;        
         flex: 1;        
-        justify-content: space-between;
-        gap: 120px;
+        justify-content: space-between;        
         margin-bottom: 80px;
     }
 
     .client img {
         margin-bottom: 30px;
+    }
+   
+    .work {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
     }    
         
 }

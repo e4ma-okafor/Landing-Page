@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunnyside Creative Agency</title>    
-    <link rel="stylesheet" href="landing-page.css">
-    <link rel="stylesheet" href="mobile-responsive.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <title>Frontend Mentor | Sunnyside Creative Agency</title>    
+    <link rel="stylesheet" href="landing-page.css">    
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="top-header">
-                <div class="start">
+            <div class="top-header">                
                 <img class="logo" src="images/logo.svg" alt="">
-                </div>
+                
                 <div class="end">                   
                 <nav class="navbar">
                     <ul class="menu">
-                        <li class="nav-link"><a href="#">About</a></li>
-                        <li class="nav-link"><a href="#">Services</a></li>
-                        <li class="nav-link"><a href="#">Projects</a></li>
-                        <li class="nav-link"><a href="#"><button>CONTACT</button></a></li>                        
+                        <li class="nav-link"><a href="#about">About</a></li>
+                        <li class="nav-link"><a href="#services">Services</a></li>
+                        <li class="nav-link"><a href="#projects">Projects</a></li>
+                        <li class="nav-link"><a href="#contacts"><button>CONTACT</button></a></li>                        
                     </ul>
                     <div class="hamburger">
                         <span class="bar"></span>
@@ -40,7 +39,7 @@
 
     <main>
         <div class="main">
-            <div class="service">
+            <div class="service first" id="about">
                 <div class="inside-work">
                 <h1>Transform your brand</h4>
                 <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you. </p>
@@ -60,7 +59,7 @@
                 <a href="#">LEARN MORE</a>
                 </div>
             </div>
-            <div class="service images">                
+            <div class="service images" id="services">                
                 <div class="text">
                 <h2>Graphic Design</h2>
                 <span>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</span>
@@ -108,11 +107,19 @@
                 </div>
             </div>                        
         </div>
-        <div class="work">            
-            <img src="images/Desktop/image-gallery-milkbottles.jpg" alt="">            
-            <img src="images/Desktop/image-gallery-orange.jpg" alt="">            
-            <img src="images/Desktop/image-gallery-cone.jpg" alt="">            
-            <img src="images/Desktop/image-gallery-sugarcubes.jpg" alt="">            
+        <div class="work" id="projects">            
+            <div class="project-image">
+                <img src="images/Desktop/image-gallery-milkbottles.jpg" alt="">
+            </div>
+            <div class="project-image">       
+                <img src="images/Desktop/image-gallery-orange.jpg" alt="">
+            </div>            
+            <div class="project-image">
+                <img src="images/Desktop/image-gallery-cone.jpg" alt="">
+            </div>            
+            <div class="project-image">
+                <img src="images/Desktop/image-gallery-sugarcubes.jpg" alt="">
+            </div>            
         </div>
     </main>
 
@@ -123,12 +130,12 @@
             </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
             </div>
-            <div class="social-links">
+            <div class="social-links" id="contacts">
                 <a href=""><img src="images/icon-facebook.svg" alt=""></a>
                 <a href=""><img src="images/icon-instagram.svg" alt=""></a>
                 <a href=""><img src="images/icon-twitter.svg" alt=""></a>
@@ -136,6 +143,10 @@
             </div>
         </div>
     </footer>
+    <div class="attribute">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Created by <a href="https://github.com/ISOkafor/">ISandra. O</a>.
+    </div>
     <script src="main.js"></script>    
 </body>
 </html>
