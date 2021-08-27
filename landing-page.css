@@ -179,7 +179,8 @@ nav button:hover {
 
 .testimonials h2 {
    text-align: center;
-   margin-bottom: 8%;   
+   margin-bottom: 8%;
+   background: rgb(252, 243, 243);
 }
 
 .clients {
@@ -364,8 +365,8 @@ nav button:hover {
          
     .clients {
         display: flex;
-        flex-flow: column;        
-        flex: 1;        
+        flex-direction: column;        
+                
         justify-content: space-between;        
         margin-bottom: 80px;
     }
