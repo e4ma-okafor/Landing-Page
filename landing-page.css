@@ -4,7 +4,7 @@
 :root {
     --color-one: gray;
     --color-two: #fff;
-    --footer-color: rgba(45, 167, 154, 0.89);
+    --footer-color: hsl(168, 44%, 61%);
 }
 * {
     box-sizing: border-box;
@@ -234,7 +234,7 @@ nav button:hover {
 }
 
 .footer-logo img {
-    filter: invert(60%) sepia(20%) saturate(3207%) hue-rotate(130deg) brightness(100%) contrast(80%);    
+    fill: hsl(167, 40%, 24%);
 }
 
 .social-links {
